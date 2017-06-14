@@ -5,7 +5,6 @@ import styles from './MainLayout.less'
 const H = window.screen.height - 165;
 
 const MainLayout = ({ children }) => {
-    console.log(H);
   return (
     <div>
         <div className={styles.top}></div>
@@ -14,7 +13,7 @@ const MainLayout = ({ children }) => {
                 <LeftMenu />
             </div>
             <div className={styles.right}>
-                
+                {children}
             </div>
         </div>
     </div>
